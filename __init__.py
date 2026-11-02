@@ -8,13 +8,13 @@ only thing it hands downstream is what it writes to disk, per business, in
     profile.json   schema, decided kinds, value ranges, samples, parse rates
     kinds.json     what each column was decided to mean, and by whom
 
-    readme.py      parse a business README (columns, conventions, conversions)
-    readers.py     csv / xlsx / sqlite -> raw tables; headers; non-record rows
-    columns.py     column evidence (census), stats, the heuristic fallback
-    classify.py    decide each column's kind - pluggable; the LLM goes here
-    kinds.py       the closed kind vocabulary + parse(kind, raw) dispatch
-    pipeline.py    the two passes, rulebook s8 row rules, the SQLite writer
-    report.py      coverage over the cached profiles
+    parse_readme.py   parse a business README (columns, conventions, conversions)
+    readers.py        csv / xlsx / sqlite -> raw tables; headers; non-record rows
+    columns.py        column evidence (census), stats, the heuristic fallback
+    classify.py       decide each column's kind - pluggable; the LLM goes here
+    kinds.py          the closed kind vocabulary + parse(kind, raw) dispatch
+    pipeline.py       the two passes, rulebook s8 row rules, the SQLite writer
+    report.py         coverage over the cached profiles
 
 The pure value parsers live outside, in `datamate.normalize`, because the query
 step reads the shop's own labels back out of the cells at answer time.

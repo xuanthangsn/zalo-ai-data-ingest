@@ -1,0 +1,11 @@
+# Nothing this package produces belongs in the repo. Its real output goes to
+# <out>/<business_id>/ (build/ at the root, ignored there); the only thing that
+# ever lands in this directory is the interpreter's bytecode cache.
+__pycache__/
+*.py[cod]
+
+# Scratch: a stray database or profile written here instead of --out=build.
+*.sqlite
+*.sqlite-journal
+profile.json
+kinds.json

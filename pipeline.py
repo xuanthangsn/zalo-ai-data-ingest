@@ -23,7 +23,7 @@ from . import classify as CL
 from . import columns as C
 from . import kinds as K
 from . import readers as RD
-from . import readme as RM
+from . import parse_readme as RM
 
 GENERIC_SHEETS = {"sheet1", "sheet", "sheet0", "data", "table1", "worksheet", "trang1"}
 

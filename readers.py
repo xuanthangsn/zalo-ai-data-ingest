@@ -17,7 +17,7 @@ import unicodedata
 from dataclasses import dataclass, field
 from datetime import date, datetime
 
-from .readme import ReadmeInfo, nfc
+from .parse_readme import ReadmeInfo, nfc
 
 MAX_HEADER_SCAN = 12
 
